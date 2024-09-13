@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to the digital portfolio of Eligio R. Bautista III, BSIT student. Explore my projects, skills, and journey in the world of technology and information technology. Discover how I'm shaping the future, one code at a time.">
+    <meta name="keywords"
+        content="Eligio R. Bautista III, BSIT student, portfolio, technology, projects, skills, web development, programming, coding, information technology, software development, programmer, web dev, freelancer, envergan, ccms, cyberenvergan, bsit, computer science">
+    <meta name="author" content="Eligio R. Bautista III">
+    <link rel="shortcut icon" href="../assets/icons/logo.ico" type="image/x-icon">
+    <title>Eli Bautista</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="../assets/css/projects.css">
+    <script src="../assets/js/index.js"></script>
+    <style>
+        .card {
+            height: auto;
+            /* Allow the card height to adjust based on its content */
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="header">
+            <h1 class="logo">Eli <span style="color: #ffa600;">Dev</span> <i class="fa-sharp fa-solid fa-code"></i></i>
+            </h1>
+
+            <input type="checkbox" name="menubar" id="menubar" class="menubar">
+            <label for="menubar" class="menubar"><i id="menubar-icon" class="fa-solid fa-bars "
+                    onclick="valCheck()"></i></label>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.facebook.com/elirbautista" target="_blank" id="hidden-btn-message">Message
+                            me <i class="fa-brands fa-facebook-messenger"></i></a></li>
+                </ul>
+            </nav>
+            <a href="https://www.facebook.com/elirbautista" target="_blank" id="btn-message">Message me <i
+                    class="fa-brands fa-facebook-messenger"></i></a>
+        </div>
+
+        <h1 class="page-title"><i class="fa-solid fa-laptop-code"></i> </i> Projects <i
+                class="fa-solid fa-folder-open"></i>
+        </h1>
+        <div class="container mt-4 mb-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search a project by title">
+                </div>
+            </div>
+        </div>
+        <div class="main-projects">
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">ChatterBox</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-chatterbox.png">
+                        <p class="mt-3 small project-description">ChatterBox uses Firebase for secure authentication, real-time database, and cloud messaging. Built with Jetpack Compose for a modern, responsive UI, it lets users register, log in, send and receive messages, and manage profiles with ease.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span
+                                class="technology">Kotlin</span>
+                            <span class="technology">Jetpack Compose</span><span class="technology">Firebase</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> July 22, 2024</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://github.com/eligiorbautista/chatterbox', '_blank')">View
+                        Repository <i class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">NiyogHub Blog App</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-niyoghub-blog.png">
+                        <p class="mt-3 small project-description">NiyogHub is a coconut news blog app built with React, Vite, and Tailwind CSS, and Express for the backend and MongoDB for the database. It features user authentication with cookie-based token storage, registration notifications, and password resets. Users can create, edit, and delete blog posts, providing an easy way to manage and share content.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">React</span>
+                            <span class="technology">Tailwind</span><span class="technology">Express</span> <span
+                                class="technology">MongoDB</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> May 12, 2024</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://github.com/eligiorbautista/notekeeper', '_blank')">View
+                        Repository <i class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">NoteKeeper</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-notekeeper.png">
+                        <p class="mt-3 small project-description">NoteKeeper is a note-taking app built with React and Vite, styled with Tailwind CSS. It utilizes Django for the backend and SQLite3 for the database. It supports user authentication, email notifications, password resets, and CRUD operations for notes. The app features a responsive design, text editing, and a RESTful API for seamless communication.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">React</span>
+                            <span class="technology">Tailwind</span><span class="technology">Django</span> <span
+                                class="technology">SQLite3</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> April 29, 2024</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://github.com/eligiorbautista/notekeeper', '_blank')">View
+                        Repository <i class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 1: News Discover -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">News Discover</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-news-discover.png">
+                        <p class="mt-3 small project-description">Stay informed with News Discover, a web application crafted using HTML, CSS, Bootstrap, and JavaScript Harnessing the power of the <a href="https://newsapi.org/">News API</a>, it delivers real-time news updates through a user-friendly interface.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">HTML</span>
+                            <span class="technology">CSS</span> <span class="technology">Bootstrap</span> <span
+                                class="technology">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> December 23, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://newsdiscover.vercel.app/', '_blank')">View Live Page <i
+                            class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 2: Cosmic Explorer -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Cosmic Explorer</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-cosmic-explorer.png">
+                        <p class="mt-3 small project-description">Embark on a celestial journey with Cosmic Explorer. Developed using HTML, CSS, Bootstrap, and JavaScript, this project connects to the <a href="https://api.nasa.gov/">NASA Open API</a>, offering a captivating exploration of cosmic discoveries.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">HTML</span>
+                            <span class="technology">CSS</span> <span class="technology">Bootstrap</span> <span
+                                class="technology">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> December 23, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://cosmicexplorer.vercel.app/', '_blank')">View Live Page <i
+                            class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 3: Image Grove -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Image Grove</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-image-grove.png">
+                        <p class="mt-3 small project-description">Experience visual delight with Image Grove. Developedusing HTML, CSS, Bootstrap, and JavaScript, this project integrates with the <a href="https://unsplash.com/documentation">Unsplash API</a> to showcase a curated collection of stunning images.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">HTML</span>
+                            <span class="technology">CSS</span> <span class="technology">Bootstrap</span> <span
+                                class="technology">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> December 22, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://imagegrove.vercel.app/', '_blank')">View Live Page <i
+                            class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 4: Food Fact -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Food Fact</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-food-fact.png">
+                        <p class="mt-3 small project-description">Indulge in the world of gastronomy with Food Fact. Developed with HTML, CSS, Bootstrap, and JavaScript, Food Fact connects to the <a href="https://openfoodfacts.github.io/openfoodfacts-server/api/">Open Food Facts API</a> to provide insightful information about various food products.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">HTML</span>
+                            <span class="technology">CSS</span> <span class="technology">Bootstrap</span> <span
+                                class="technology">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> November 26, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://foodfact.vercel.app/', '_blank')">View Live Page <i
+                            class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 5: Elliana coffee + sweets -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Elliana coffee + sweets</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-elliana-coffee-sweets.jpg">
+                        <p class="mt-3 small project-description">Experience the charm of Elliana coffee + sweets through this web project. Built with HTML, CSS, and JavaScript, this project showcases the cozy ambiance of a coffee shop.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">HTML</span>
+                            <span class="technology">CSS</span><span class="technology">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> September 7, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://ellianacoffeesweet.vercel.app/', '_blank')">View Live Page <i
+                            class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+
+            <!-- Project 6: Facebook Login Clone -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Facebook Login Clone</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-facebook-clone.png">
+                        <p class="mt-3 small project-description">This educational project, created with HTML, CSS, and JavaScript, resembles the Meta's Facebook login page. It replicates the form and other elements found Fon the original platform, showcasing responsive design ideas. Please keep in mind that this is just intended for educational purposes only</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">HTML</span>
+                            <span class="technology">CSS</span><span class="technology">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> August 29, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://webfacebook.vercel.app/', '_blank')">View Live Page <i
+                            class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 7: Quote App -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Quote App</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-quote-app.jpg">
+                        <p class="mt-3 small project-description">Discover inspiration with the Quote App, a user-friendly website allowing you to log in, manage quotes, and express yourself easily using MongoDB, Express, React.</p>
+
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;">
+                            <span class="technology">React</span> <span class="technology">Express</span> <span
+                                class="technology">MongoDB</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> July 10, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://quoteapp-delta.vercel.app', '_blank')">View Live Page <i
+                            class="fa-solid fa-up-right-from-square"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 8: EspressoExpress -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">EspressoExpress</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-espresso-express.jpg">
+                        <p class="mt-3 small project-description">EspressoExpress is a mobile app crafted with Dart and Flutter. Explore the world of coffee with this dynamic application that brings the coffee experience to your fingertips.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">Dart</span>
+                            <span class="technology">Flutter</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> May 18, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://github.com/eligiorbautista/projects/tree/main/Mobile/flutter-espresso-express', '_blank')">View
+                        Repository <i class="fa-brands fa-github"></i></button>
+                </div>
+            </span>
+
+            <!-- Project 9: Task Buddy -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Task Buddy</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-task-buddy.jpg">
+                        <p class="mt-3 small project-description">Stay organized with Task Buddy, a mobile app developed with Dart, Flutter, and Hive. This app helps you manage your tasks efficiently, providing a seamless user experience.</p>
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span class="technology">Dart</span>
+                            <span class="technology">Flutter</span>
+                            <span class="technology">Hive</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> May 8, 2023</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://www.mediafire.com/file/ttccpzsw869kdt7/Task_Buddy.apk/file', '_blank')">Download
+                        <i class="fa-solid fa-download "></i></button>
+                </div>
+            </span>
+
+            <!-- Project 10: Student Information System -->
+            <span>
+                <div class="card mx-auto shadow" style="width: 80%;">
+                    <div class="card-header text-center text-dark fw-bold">Student Information System</div>
+                    <div class="card-body">
+                        <img class="card-img-top img-fluid card-project-image"
+                            src="../assets/img/projects/dev-eli-student-information-system.jpg">
+                        <p class="mt-3 small project-description">Simplify education management with this desktop app in Python, PyQt6, and SQLite. It features automatic email alerts for student registrations and enables administrators to send messages directly to registered students.</p>
+
+                        <p class="card-text mt-2 small" style="font-size: 0.8rem;"><span
+                                class="technology">Python</span> <span class="technology">PyQt6</span>
+                            <span class="technology">SQLite</span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="date small" style="font-size: 0.7rem;"><i
+                                class="fa-sharp fa-solid fa-calendar-days"></i> April 28, 2022</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm m-2"
+                        onclick="window.open('https://www.mediafire.com/file/boshh73zrvyb6mv/Student_Information_System_Setup.exe/file', '_blank')">Download
+                        <i class="fa-solid fa-download "></i></button>
+                </div>
+            </span>
+
+        </div>
+        <div class="container text-center mt-5">
+            <h3 class="see-more">
+                <a href="https://github.com/eligiorbautista?tab=repositories" target="_blank"
+                    class="btn bg-light-subtle text-dark btn-sm fs-5 rounded-2"
+                    style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+                    View more on GitHub <i class="fa-brands fa-github"></i></i>
+                </a>
+            </h3>
+        </div>
+
+        <div class="footer">
+            <div class="socials-section">
+                <a href="https://www.facebook.com/elirbautista" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://instagram.com/gionapagod_" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://github.com/eligiorbautista" target="_blank"><i
+                        class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/eligio-bautista-iii-50473127b/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="copyright-section">
+                <p>Copyright &copy; 2024 by <a href="https://www.facebook.com/elirbautista" target="_blank">Eli
+                        Bautista</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="noticeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-black" id="noticeModalLabel">Notice: Right-Click Disabled for Copyright
+                        Protection</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-black">
+                    Right-click functionality on this page is disabled to protect my copyrighted content.<br><br>For
+                    content access or queries, contact me at it.elibautista@gmail.com.<br><br>Thank you for
+                    understanding.<br><br>Best, <br>Eli Bautista Portfolio Website<br>Eli Bautista
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade text-dark" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle" class="mt-3"></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <img id="modalImage" class="img-fluid" alt="Project Image">
+                </div>
+
+                <div class="modal-footer">
+                    <p id="modalDescription"></p>
+                    <hr>
+                    <p id="modalDate" class="date small" style="font-size: 0.7rem;"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("searchInput");
+            const projectContainers = document.querySelectorAll(".main-projects .card");
+
+            // Event listener for changes in the search input
+            searchInput.addEventListener("input", function () {
+                const searchTerm = searchInput.value.toLowerCase();
+                let visibleProjectCount = 0;
+
+                // Loop through each project container to filter based on title
+                projectContainers.forEach(function (container) {
+                    const title = container.querySelector(".card-header").innerText.toLowerCase();
+                    if (title.includes(searchTerm)) {
+                        container.style.display = "block";
+                        visibleProjectCount++;
+                    } else {
+                        container.style.display = "none";
+                    }
+                });
+
+            });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
